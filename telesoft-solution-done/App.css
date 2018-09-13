@@ -1,0 +1,92 @@
+
+/* ################### TABLE ################### */
+.tableContainer {
+    max-width: 300px;
+    margin: auto;
+    padding-top: 10em;
+}
+
+tr th {
+    background-color: #6F7084;
+    border: 2px solid white;
+    color: white;
+    padding: 0.4em 5em 0.4em 0.5em;
+}
+
+th:nth-child(even) {    /* Tiny bit of styling for the 2nd cell to make it at least a bit visually smaller. */
+    padding: 0.4em 3em 0.4em 0em;
+}
+
+td {
+    border: 2px solid white;
+    padding: 0.4em 5em 0.4em 0.5em;
+}
+
+tr:nth-child(even) {    /* These two are here to make the "zebra like" table cells. */
+    background-color: #E7E7E7;
+}
+
+tr:nth-child(odd) {
+    background-color: #F0F0F0;
+}
+
+/* ################### END OF TABLE ################### */
+
+/* ################ INPUT AND BUTTONS ################# */
+.suggInput {
+    margin-left: 0.4em;
+    width: 10.6em;
+}
+
+.suggInput, .addButton {
+    padding: 0.6em;
+}
+
+.addButton {
+    background-color: #5C7EBD;
+    color: white;
+    width: 7.3em;
+    border: 0;
+    padding: 0.8em;
+}
+
+.addButton:hover {
+    background-color: #7796CE;
+}
+
+.addButton:active {
+    background-color: #5974A9;
+}
+
+/* ################ END OF INPUT AND BUTTONS ################# */
+
+/* ################ STATES STYLING ################# */
+
+tr td.checked:nth-child(even) {     /*Have to always target the 2nd child, as I don't want same to apply to first cell in a row. */
+    background-image: url("./Resources/Images/like.svg");
+    background-size: 1.1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+tr td:nth-child(even):hover {
+    background-color: #CBD9F3;
+}
+
+tr td.checked:nth-child(even):hover {
+    background-color: #CBD9F3;
+}
+
+tr td:nth-child(even):active {
+    background-color: #A8B7D6;
+}
+
+tr td.checked:nth-child(even):active {
+    background-color: #A8B7D6;
+}
+
+td:nth-child(2) {   /* Probably not necessary but gives it more of a "button" feel when it's a pointer. */
+    cursor: pointer;
+}
+
+/* ################ END OF STATES STYLING ################# */

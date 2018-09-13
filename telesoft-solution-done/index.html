@@ -1,0 +1,70 @@
+<!--    Assignment for "Telesoftas" Sent by Ieva 
+        Completed by Norbertas Petreikis, 2018
+
+    ##Description of task can be found within README file. Tried to complete it with as much Pure JS as I could implementing different approaches..
+    .. to show that I know a thing or two about pure JS, however I am way more familiar with frameworks.
+
+    - Since I had noone to really ask how/what/in which prefered way should things be done, I pretty much did it out of my head over the course of couple hours~
+    .. only guidance being the provided PDF, which showcased some design elements to get the idea how it should be done.
+    
+    .. Tried my best at replicating that as closely as I could while keeping it pretty basic as that is what I guess ?? was the requirement.
+    
+    - If at any point this seems ridicilously too simple, I am more than happy to re-do the assignment the "correct way"
+    What I mean by that:
+
+        -Possibly build this with a framework (Working with React at the moment, so my prefernce of course.).
+        -Use some libraries like Semantic-Ui / Bootstrap
+        -At least include the local storage so it actually serves as a todo list.
+        -Remove/edit functionality.
+        -Responsivness as at the moment there's zero to none of that 
+        -------------------------------------------------------------------------
+
+    ##All of the above was once again not implemented due to that fact that I believe it was ment to be kept simple, yet interesting to mess around with pure JS :) 
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Telesoftas Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="App.css" />
+</head>
+
+<body>
+    <div class="tableContainer">
+        <table class="table" id="likesTable">   <!--Adding some pre-defined cells below this that contain some "values" as seen in the PDF. -->
+            <thead>
+                <tr>
+                    <th scope="col">Suggestion</th>
+                    <th scope="col">Likes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Item 1</td>
+                    <td id="0">1</td>
+                </tr>
+                <tr>
+                    <td>Item 2</td>
+                    <td id="1">5</td>
+                </tr>
+                <tr>
+                    <td>Item 2</td>
+                    <td id="2">1</td>
+                </tr>
+                <tr>
+                    <td>Item 4</td>
+                    <td id="3">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="text" class="suggInput" placeholder="Add new suggestion" id="inputField">  <!--Input field element as seen in the PDF.-->
+        <button class="addButton" onclick="insertSuggestion()">Add</button> <!--Add button as seen in the PDF.-->
+    </div>
+    <script src="App.js"></script>  <!--Main and only JS file used to power the "todo list-like" app.-->
+</body>
+
+</html>
